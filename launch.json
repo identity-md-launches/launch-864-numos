@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "Numos",
+    "name": "Numos",
+    "symbol": "NUMOS",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "125270724187523965593206900"
+  },
+  "economics": {"poolBps":9000,"initialMarketCapWei":"2500000000000000000000"},
+  "notes": "Numos (NUMOS) is a community token for @Numosimd on X (https://x.com/Numosimd). The Numos constructor takes no arguments and mints the entire fixed supply of 1,000,000,000 tokens with 18 decimals once to msg.sender. The accepted implementation uses standard ERC-20 transfers with no token transfer fees, post-launch minting, owner privileges, upgradeability, or blacklist. No application contracts or initialization calls are required. The launch allocates 90% of total supply to liquidity and 0 tokens to the creator wallet. Defaults: pool fee 3000 (0.3%) and tick spacing 60; the pool trading fee applies independently of token transfers. The opening market cap is denominated in the selected paired currency's minor units. initialPrice is provenance only: floor(sqrt(2500000000000000000000 / 1000000000000000000000000000) * 2^96), using NUMOS as currency0 and the paired token as currency1 for this reference calculation. The deployer derives the actual opening price from economics.initialMarketCapWei and token.totalSupply using the deployed currencies' address ordering."
+}
